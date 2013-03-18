@@ -92,7 +92,7 @@
         }
         exports.ich = ich;
     } else {
-        root['ich'] = ich;
+        root['ich'] = root['ich'] || ich;
     }
     
     if (typeof document !== 'undefined') {
